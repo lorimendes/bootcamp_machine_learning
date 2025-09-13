@@ -10,9 +10,7 @@ O conjunto de treinamento contém dados com rótulos que servirão para que o mo
 ### 3. Explique como você lidaria com dados ausentes em um conjunto de dados de treinamento.
 Depende do volume do conjunto de dados, mas no caso de um base menor, pode ser feita apenas a remoção dos dados ausentes, caso sejam poucos e não deixe o conjunto desbalanceado quando comparado com as outras categorias. Se afetar o balanceamento no volume entre as classificações, é importante coletar mais dados para equilibrar. 
 
-
 ### 4. O que é uma matriz de confusão e como ela é usada para avaliar o desempenho de um modelo preditivo?
-
+A matriz de confusão é uma tabela que representa e faz um cruzamento da distruição entre os positivos e negativos previstos pelo modelo e os reais de acordo com os rótulos para cada classficação. Essa matriz ajuda a denifir qual será o limite de classificação, a depender da quantidade de falsos positivos que queremos deixar passar, reduzindo o limite, ou a quantidade de falsos negativos que poderia perder, aumentando o limite de classificação.
 
 ### 5. Em quais áreas (tais como construção civil, agricultura, saúde, manufatura, entre outras) você acha mais interessante aplicar algoritmos de machine learning?
-
