@@ -14,3 +14,4 @@ Depende do volume do conjunto de dados, mas no caso de um base menor, pode ser f
 A matriz de confusão é uma tabela que representa e faz um cruzamento da distruição entre os positivos e negativos previstos pelo modelo e os reais de acordo com os rótulos para cada classficação. Essa matriz ajuda a denifir qual será o limite de classificação, a depender da quantidade de falsos positivos que queremos deixar passar, reduzindo o limite, ou a quantidade de falsos negativos que poderia perder, aumentando o limite de classificação.
 
 ### 5. Em quais áreas (tais como construção civil, agricultura, saúde, manufatura, entre outras) você acha mais interessante aplicar algoritmos de machine learning?
+Dentre tantas possibilidades interessante, duas que me chamam a atenção, nesse momento, são: a aplicação em saúde para previsão dos riscos de doenças, e em sistemas de recomendação para personalização de experiências nos mais diversos serviços.
