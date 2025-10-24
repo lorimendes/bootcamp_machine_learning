@@ -4,7 +4,7 @@ import opendatasets as od
 od.download("https://www.kaggle.com/datasets/gpiosenka/sports-classification?datasetId=1209061&sortBy=voteCount&select=train")
 
 
-# Importa de bibliotecas
+# Importa bibliotecas
 
 import os
 import pandas as pd
@@ -78,7 +78,7 @@ def load_subset_dataset(directory_list, labels='inferred', label_mode='int', ima
 
 train_data, class_names = load_subset_dataset(train_dirs, batch_size=16, image_size=(224,224), shuffle=True)
 val_data, _ = load_subset_dataset(val_dirs, batch_size=16, image_size=(224,224), shuffle=True)
-test_data, _ = load_subset_dataset(test_dirs, batch_size=16, image_size=(224,224), shuffle=False) # No need to shuffle test data
+test_data, _ = load_subset_dataset(test_dirs, batch_size=16, image_size=(224,224), shuffle=False)
 
 
 # Visualiza os dados
@@ -97,7 +97,7 @@ val_data = val_data.cache().prefetch(buffer_size=tf.data.AUTOTUNE)
 test_data = test_data.cache()
 
 
-# Usa o modelo pré-treinado ResNet50
+# Utiliza o modelo pré-treinado ResNet50
 
 preprocess_input = keras.applications.resnet50.preprocess_input
 base_model = keras.applications.ResNet50(input_shape=(224,224,3), include_top=False, weights="imagenet")
@@ -131,7 +131,7 @@ plt.imshow(original_image.numpy().astype("uint8"))
 plt.title(f"Original\nClass: {class_names[original_label.numpy()]}")
 plt.axis("off")
 
-augmentation_types = ["Random Rotation", "Random Flip (Horizontal)", "Random Zoom", "Random Rotation, Flip, and Zoom"] # Simplified labels
+augmentation_types = ["Random Rotation", "Random Flip (Horizontal)", "Random Zoom", "Random Rotation, Flip, and Zoom"]
 
 for i in range(len(augmented_images)):
     plt.subplot(1, 5, i + 2)
@@ -368,7 +368,7 @@ for i in range(len(y_wrong_2)):
     plt.axis('off')
 
 
-# Visualização de imagem após a camada de normalização
+# Visualiza imagem após a camada de normalização
 
 import tensorflow as tf
 from tensorflow.keras import models, layers
